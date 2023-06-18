@@ -80,12 +80,12 @@
 #define CH34x_BAUDRATE_FACTOR	1532620800
 #define CH34x_BAUDRATE_DIVMAX	3
 
-//#define DEBUG_CH34x
-#undef  DEBUG_CH34x
+#define DEBUG_CH34x
+// #undef  DEBUG_CH34x
 
 #ifdef DEBUG_CH34x
 #define dbg_ch34x( format, arg... )		\
-	printk( KERN_DEBUG "%d: " format "\n", __LINE__, ##arg )
+	printk( KERN_DEBUG "Louis %d: " format "\n", __LINE__, ##arg )
 #else
 #define dbg_ch34x( format, arg... )		\
 do{									\
