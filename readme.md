@@ -24,7 +24,7 @@ Usage:
 // 1.2 - 1.3 Fix some bugs			
 ```
 # Common error
-
-Check the path `/lib/module/$(shell uname -r)/build/` exist and contains the correct libray, just doing an ls of the path should be good. If it's empty check you don't have several kernel installed and check which one you're using. To check your kernel, run :
-* `uname -r`
+* On the arduino software if the default bootloader for the board is not working try the old one
+* Check the path `/lib/module/$(shell uname -r)/build/` exist and contains the correct libray, just doing an ls of the path should be good. If it's empty check you don't have several kernel installed and check which one you're using. To check your kernel, run :
+	* `uname -r`\
 The `ch34x.c` have been written by the chinese compagny who did the board, if it fails to compile it may be link to wrong return arguments of the function. The type of return is different from one kernel to another version.
